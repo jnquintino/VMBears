@@ -1,0 +1,30 @@
+<block-ui>
+  <div class="position">
+    <mat-card #card class="card">
+      <mat-card-header>
+        <mat-card-title>Envio de XML</mat-card-title>
+        <mat-card-subtitle>Proceda com o envio dos arquivos XML</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Para enviar os arquivos basta escolher um ou mais e clicar no botão <strong>Upload</strong>,
+          caso queira limpar clique no botão <strong>Reset</strong>.
+        </p>
+        <br/>
+        <p>
+          <input type="file" id="file" multiple (change)="details($event)" [hidden]="true">
+          <label for="file" class="mat-stroked-button efect">Selecione os arquivos</label>
+        </p>
+        <br/>
+        <div *ngIf="files">
+          <label>Arquivo escolhidos:</label>
+          <pre>{{files | json}}</pre>
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="buttons">
+        <button mat-raised-button color="primary" type="button" (click)="upload()" [disabled]="files.length == 0">Upload</button>
+        <button mat-stroked-button color="warn" type="reset" (click)="reset()">Reset</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</block-ui>
