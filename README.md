@@ -19,7 +19,7 @@ Agora para subir de forma trivial, sem o uso do Docker podemos seguir os seguint
 3) Projeto com as dependencias carregadas, iremos localizar a classe de inicialização do Spring Boot como podem ver na imagem abaixo.
 
 
-   ![image-20230112220217053](/Users/quintino/Library/Application Support/typora-user-images/image-20230112220217053.png)
+   ![image-20230112220217053](imagens/image-20230112220217053.png)
 
 4) Cliquem com o botão direito do mouse sobre a classe e mande executar.
 
@@ -28,17 +28,17 @@ Resolvemos já a nossa api, agora iremos cuidar do projeto web, vamos na pasta r
 1) Primeiramente iremos executar o comando **npm install** para baixar as depdencias do projeto web e aguardaremos a conclusão como podem ver na imagem abaixo.
    
 
-   ![image-20230112220334541](/Users/quintino/Library/Application Support/typora-user-images/image-20230112220334541.png)
+   ![image-20230112220334541](imagens/image-20230112220334541.png)
    
 2) Feito isso poderemos iniciar a aplicação com o seguinte comando **npm start** como podem verificar na imagem logo abaixo.
    
 
-   ![image-20230112220427344](/Users/quintino/Library/Application Support/typora-user-images/image-20230112220427344.png)
+   ![image-20230112220427344](imagens/image-20230112220427344.png)
    
 3) Podemos agora rodar o nosso projeto no endereço **http://localhost:4200** e verão uma página similar a esta.
    
 
-   ![image-20230112220521615](/Users/quintino/Library/Application Support/typora-user-images/image-20230112220521615.png)
+   ![image-20230112220521615](imagens/image-20230112220521615.png)
    
 4) Basta informar os arquivos e efetuar o upload.
 
@@ -48,7 +48,7 @@ Resolvemos já a nossa api, agora iremos cuidar do projeto web, vamos na pasta r
 
 Agora caso queiram de uma forma mais autonatizada podemos usar o Docker Compose, basta ficar na pasta do projeto, onde iremos ver as pastas api e web, como podem ver na imagem logo abaixo.
 
-![image-20230112220631686](/Users/quintino/Library/Application Support/typora-user-images/image-20230112220631686.png)
+![image-20230112220631686](imagens/image-20230112220631686.png)
 
 Para executar o Docker Compose, antes de mais nada vamos precisar do Docker inicializado na máquina, feito isso iremos rodar o Docker Compose da seguinte forma: **docker-compose up**
 
